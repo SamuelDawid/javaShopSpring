@@ -1,7 +1,7 @@
 package com.example.javashopspring.interfaces;
 // Open/Closed:
-import org.javashop.domain.User.Account;
-import org.javashop.models.Cart;
+import com.example.javashopspring.domain.User.Account;
+import com.example.javashopspring.models.Cart;
 
 import java.math.BigDecimal;
 // Strategy pattern

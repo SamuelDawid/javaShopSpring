@@ -1,9 +1,9 @@
 package com.example.javashopspring.models;
 
 import org.apache.commons.lang3.Validate;
-import org.javashop.domain.User.Account;
-import org.javashop.enums.OrderStatus;
-import org.javashop.interfaces.Savable;
+import com.example.javashopspring.domain.User.Account;
+import com.example.javashopspring.enums.OrderStatus;
+import com.example.javashopspring.interfaces.Savable;
 
 import java.math.BigDecimal;
 import java.time.ZonedDateTime;

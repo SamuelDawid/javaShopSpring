@@ -2,9 +2,9 @@ package com.example.javashopspring.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.javashop.interfaces.PaymentStrategy;
-import org.javashop.interfaces.Validator;
-import org.javashop.models.PaymentResult;
+import com.example.javashopspring.interfaces.PaymentStrategy;
+import com.example.javashopspring.interfaces.Validator;
+import com.example.javashopspring.models.PaymentResult;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;

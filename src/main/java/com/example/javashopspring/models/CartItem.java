@@ -1,7 +1,7 @@
 package com.example.javashopspring.models;
 
 import org.apache.commons.lang3.Validate;
-import org.javashop.domain.resources.Electronics;
+import com.example.javashopspring.domain.resources.Electronics;
 
 /**
  * The type Cart item.

@@ -2,13 +2,13 @@ package com.example.javashopspring.service;
 
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
-import org.javashop.Exceptions.NotEnoughPointsException;
-import org.javashop.Exceptions.VoucherAlreadyExistsException;
-import org.javashop.Exceptions.VoucherNotFoundException;
-import org.javashop.dto.voucherDTO.VoucherDto;
-import org.javashop.mapper.VoucherMapper;
-import org.javashop.models.Voucher;
-import org.javashop.repo.VoucherRepository;
+import com.example.javashopspring.Exceptions.NotEnoughPointsException;
+import com.example.javashopspring.Exceptions.VoucherAlreadyExistsException;
+import com.example.javashopspring.Exceptions.VoucherNotFoundException;
+import com.example.javashopspring.dto.voucherDTO.VoucherDto;
+import com.example.javashopspring.mapper.VoucherMapper;
+import com.example.javashopspring.models.Voucher;
+import com.example.javashopspring.repo.VoucherRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

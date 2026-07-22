@@ -1,9 +1,9 @@
 package com.example.javashopspring.validators;
 
 import lombok.RequiredArgsConstructor;
-import org.javashop.domain.User.Account;
-import org.javashop.interfaces.Validator;
-import org.javashop.repo.AccountsRepository;
+import com.example.javashopspring.domain.User.Account;
+import com.example.javashopspring.interfaces.Validator;
+import com.example.javashopspring.repo.AccountsRepository;
 
 import java.math.BigDecimal;
 import java.util.Optional;

@@ -5,9 +5,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import org.apache.commons.lang3.Validate;
-import org.javashop.enums.pc.CPU;
-import org.javashop.enums.pc.GPU;
-import org.javashop.enums.pc.RAM;
+import com.example.javashopspring.enums.pc.CPU;
+import com.example.javashopspring.enums.pc.GPU;
+import com.example.javashopspring.enums.pc.RAM;
 
 import java.math.BigDecimal;
 

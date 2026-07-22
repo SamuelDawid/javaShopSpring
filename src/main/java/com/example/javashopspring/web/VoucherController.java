@@ -1,9 +1,9 @@
 package com.example.javashopspring.web;
 
-import org.javashop.dto.voucherDTO.CreateVoucherCommand;
-import org.javashop.dto.voucherDTO.VoucherDto;
-import org.javashop.models.Voucher;
-import org.javashop.service.VoucherService;
+import com.example.javashopspring.dto.voucherDTO.CreateVoucherCommand;
+import com.example.javashopspring.dto.voucherDTO.VoucherDto;
+import com.example.javashopspring.models.Voucher;
+import com.example.javashopspring.service.VoucherService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

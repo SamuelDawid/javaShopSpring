@@ -4,11 +4,11 @@ package com.example.javashopspring.service;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
-import org.javashop.Exceptions.OrderProcessingException;
-import org.javashop.domain.resources.Electronics;
-import org.javashop.models.Invoice;
-import org.javashop.models.InvoiceLine;
-import org.javashop.models.Order;
+import com.example.javashopspring.Exceptions.OrderProcessingException;
+import com.example.javashopspring.domain.resources.Electronics;
+import com.example.javashopspring.models.Invoice;
+import com.example.javashopspring.models.InvoiceLine;
+import com.example.javashopspring.models.Order;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;

@@ -5,8 +5,8 @@ import lombok.NonNull;
 import lombok.Setter;
 import lombok.ToString;
 import org.apache.commons.lang3.Validate;
-import org.javashop.enums.AccountType;
-import org.javashop.models.Voucher;
+import com.example.javashopspring.enums.AccountType;
+import com.example.javashopspring.models.Voucher;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

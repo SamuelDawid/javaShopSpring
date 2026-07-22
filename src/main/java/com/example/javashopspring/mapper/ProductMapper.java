@@ -1,8 +1,8 @@
 package com.example.javashopspring.mapper;
 
-import org.javashop.domain.resources.Electronics;
-import org.javashop.dto.productDTO.CreateProductCommand;
-import org.javashop.dto.productDTO.ProductDto;
+import com.example.javashopspring.domain.resources.Electronics;
+import com.example.javashopspring.dto.productDTO.CreateProductCommand;
+import com.example.javashopspring.dto.productDTO.ProductDto;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

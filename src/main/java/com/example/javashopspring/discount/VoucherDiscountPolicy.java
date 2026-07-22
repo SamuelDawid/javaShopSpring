@@ -1,11 +1,11 @@
 package com.example.javashopspring.discount;
 
 import lombok.RequiredArgsConstructor;
-import org.javashop.domain.User.Account;
-import org.javashop.interfaces.DiscountPolicy;
-import org.javashop.models.Cart;
-import org.javashop.models.Voucher;
-import org.javashop.service.DiscountService;
+import com.example.javashopspring.domain.User.Account;
+import com.example.javashopspring.interfaces.DiscountPolicy;
+import com.example.javashopspring.models.Cart;
+import com.example.javashopspring.models.Voucher;
+import com.example.javashopspring.service.DiscountService;
 
 import java.math.BigDecimal;
 import java.util.Comparator;

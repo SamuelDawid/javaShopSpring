@@ -2,9 +2,9 @@ package com.example.javashopspring.domain.resources;
 
 import jakarta.persistence.*;
 import org.apache.commons.lang3.Validate;
-import org.javashop.enums.Colour;
-import org.javashop.enums.phone.ACCESSORIES;
-import org.javashop.enums.phone.BATTERY;
+import com.example.javashopspring.enums.Colour;
+import com.example.javashopspring.enums.phone.ACCESSORIES;
+import com.example.javashopspring.enums.phone.BATTERY;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

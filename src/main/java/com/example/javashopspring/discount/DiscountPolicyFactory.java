@@ -1,10 +1,10 @@
 package com.example.javashopspring.discount;
 
 import lombok.RequiredArgsConstructor;
-import org.javashop.domain.User.Account;
-import org.javashop.enums.AccountType;
-import org.javashop.interfaces.DiscountPolicy;
-import org.javashop.service.DiscountService;
+import com.example.javashopspring.domain.User.Account;
+import com.example.javashopspring.enums.AccountType;
+import com.example.javashopspring.interfaces.DiscountPolicy;
+import com.example.javashopspring.service.DiscountService;
 
 import java.util.Map;
 //Factory

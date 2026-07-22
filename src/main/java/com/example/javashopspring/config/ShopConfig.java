@@ -1,11 +1,11 @@
 package com.example.javashopspring.config;
 
-import org.javashop.interfaces.PaymentStrategy;
-import org.javashop.interfaces.Validator;
-import org.javashop.repo.AccountsRepository;
-import org.javashop.service.PaymentService;
-import org.javashop.validators.AmountValidator;
-import org.javashop.validators.NotBlockedValidator;
+import com.example.javashopspring.interfaces.PaymentStrategy;
+import com.example.javashopspring.interfaces.Validator;
+import com.example.javashopspring.repo.AccountsRepository;
+import com.example.javashopspring.service.PaymentService;
+import com.example.javashopspring.validators.AmountValidator;
+import com.example.javashopspring.validators.NotBlockedValidator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

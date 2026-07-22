@@ -3,13 +3,13 @@ package com.example.javashopspring.service;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import org.javashop.Exceptions.ProductAlreadyExists;
-import org.javashop.Exceptions.ProductNotFoundException;
-import org.javashop.domain.resources.Electronics;
-import org.javashop.dto.productDTO.CreateProductCommand;
-import org.javashop.dto.productDTO.ProductDto;
-import org.javashop.mapper.ProductMapper;
-import org.javashop.repo.ProductsRepository;
+import com.example.javashopspring.Exceptions.ProductAlreadyExists;
+import com.example.javashopspring.Exceptions.ProductNotFoundException;
+import com.example.javashopspring.domain.resources.Electronics;
+import com.example.javashopspring.dto.productDTO.CreateProductCommand;
+import com.example.javashopspring.dto.productDTO.ProductDto;
+import com.example.javashopspring.mapper.ProductMapper;
+import com.example.javashopspring.repo.ProductsRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

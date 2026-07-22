@@ -1,15 +1,15 @@
 package com.example.javashopspring.config;
 
-import org.javashop.domain.resources.Computer;
-import org.javashop.domain.resources.SmartPhone;
-import org.javashop.enums.Colour;
-import org.javashop.enums.pc.CPU;
-import org.javashop.enums.pc.GPU;
-import org.javashop.enums.pc.RAM;
-import org.javashop.enums.phone.BATTERY;
-import org.javashop.models.Voucher;
-import org.javashop.service.ProductManager;
-import org.javashop.service.VoucherService;
+import com.example.javashopspring.domain.resources.Computer;
+import com.example.javashopspring.domain.resources.SmartPhone;
+import com.example.javashopspring.enums.Colour;
+import com.example.javashopspring.enums.pc.CPU;
+import com.example.javashopspring.enums.pc.GPU;
+import com.example.javashopspring.enums.pc.RAM;
+import com.example.javashopspring.enums.phone.BATTERY;
+import com.example.javashopspring.models.Voucher;
+import com.example.javashopspring.service.ProductManager;
+import com.example.javashopspring.service.VoucherService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

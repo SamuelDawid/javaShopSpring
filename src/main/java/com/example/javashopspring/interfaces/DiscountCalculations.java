@@ -1,8 +1,8 @@
 package com.example.javashopspring.interfaces;
 
-import org.javashop.domain.User.Account;
-import org.javashop.enums.AccountType;
-import org.javashop.models.Voucher;
+import com.example.javashopspring.domain.User.Account;
+import com.example.javashopspring.enums.AccountType;
+import com.example.javashopspring.models.Voucher;
 
 import java.math.BigDecimal;
 //Interface Segregation

@@ -1,6 +1,6 @@
 package com.example.javashopspring.repo;
 
-import org.javashop.domain.User.Account;
+import com.example.javashopspring.domain.User.Account;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;

@@ -1,9 +1,9 @@
 package com.example.javashopspring.web;
 
 import lombok.RequiredArgsConstructor;
-import org.javashop.dto.productDTO.CreateProductCommand;
-import org.javashop.dto.productDTO.ProductDto;
-import org.javashop.service.ProductManager;
+import com.example.javashopspring.dto.productDTO.CreateProductCommand;
+import com.example.javashopspring.dto.productDTO.ProductDto;
+import com.example.javashopspring.service.ProductManager;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

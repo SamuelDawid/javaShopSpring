@@ -3,14 +3,14 @@ package com.example.javashopspring.service;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.Validate;
-import org.javashop.Exceptions.InvalidVoucherException;
-import org.javashop.Exceptions.NoSuchDiscountException;
-import org.javashop.Exceptions.NotAvailableForCompanyAccountsException;
-import org.javashop.Exceptions.OnlyCompanyAccountDiscountException;
-import org.javashop.domain.User.Account;
-import org.javashop.enums.AccountType;
-import org.javashop.interfaces.DiscountCalculations;
-import org.javashop.models.Voucher;
+import com.example.javashopspring.Exceptions.InvalidVoucherException;
+import com.example.javashopspring.Exceptions.NoSuchDiscountException;
+import com.example.javashopspring.Exceptions.NotAvailableForCompanyAccountsException;
+import com.example.javashopspring.Exceptions.OnlyCompanyAccountDiscountException;
+import com.example.javashopspring.domain.User.Account;
+import com.example.javashopspring.enums.AccountType;
+import com.example.javashopspring.interfaces.DiscountCalculations;
+import com.example.javashopspring.models.Voucher;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -66,7 +66,7 @@ public class DiscountService implements DiscountCalculations {
      * @return the generated voucher
      * @throws IllegalArgumentException                         if points are negative or zero
      * @throws NotAvailableForCompanyAccountsException          if the account type is COMPANY
-     * @throws org.javashop.Exceptions.NotEnoughPointsException if the points amount do not match any discount
+     * @throws com.example.javashopspring.Exceptions.NotEnoughPointsException if the points amount do not match any discount
      */
     @Override
     public Voucher exchangePoints(@NonNull Account account, int points) {

@@ -1,7 +1,7 @@
 package com.example.javashopspring.service;
 
 import lombok.NonNull;
-import org.javashop.interfaces.Savable;
+import com.example.javashopspring.interfaces.Savable;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

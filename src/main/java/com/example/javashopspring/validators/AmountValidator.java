@@ -1,6 +1,6 @@
 package com.example.javashopspring.validators;
 
-import org.javashop.interfaces.Validator;
+import com.example.javashopspring.interfaces.Validator;
 
 import java.math.BigDecimal;
 import java.util.Optional;
