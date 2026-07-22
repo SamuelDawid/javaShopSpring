@@ -1,0 +1,7 @@
+package com.example.javashopspring.Exceptions;
+
+public class NotAvailableForCompanyAccountsException extends RuntimeException {
+    public NotAvailableForCompanyAccountsException() {
+        super("This option is not available for Company type account");
+    }
+}
