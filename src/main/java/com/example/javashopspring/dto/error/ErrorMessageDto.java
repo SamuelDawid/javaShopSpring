@@ -1,8 +1,8 @@
 package com.example.javashopspring.dto.error;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public record ErrorMessageDto(String message,
                               int statusCode,
-                              LocalDate time) {
+                              LocalDateTime time) {
 }
