@@ -30,8 +30,7 @@ public class ProductManager {
      */
     public void addProducts(@NonNull List<Electronics> list) {
         if (!list.isEmpty()) {
-            for (Electronics e : list)
-                productsRepository.save(e);
+            productsRepository.saveAll(list);
         }
     }
 

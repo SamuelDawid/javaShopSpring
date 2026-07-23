@@ -4,6 +4,6 @@ import org.springframework.http.HttpStatus;
 
 public class VoucherAlreadyExistsException extends JavaShopException {
     public VoucherAlreadyExistsException() {
-        super("Voucher Already Exists", HttpStatus.BAD_REQUEST);
+        super("Voucher Already Exists", HttpStatus.CONFLICT);
     }
 }

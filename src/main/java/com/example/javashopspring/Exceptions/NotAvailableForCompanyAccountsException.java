@@ -4,6 +4,6 @@ import org.springframework.http.HttpStatus;
 
 public class NotAvailableForCompanyAccountsException extends JavaShopException {
     public NotAvailableForCompanyAccountsException() {
-        super("This option is not available for Company type account", HttpStatus.BAD_REQUEST);
+        super("This option is not available for Company type account", HttpStatus.FORBIDDEN);
     }
 }

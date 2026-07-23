@@ -4,6 +4,6 @@ import org.springframework.http.HttpStatus;
 
 public class VoucherNotFoundException extends JavaShopException {
     public VoucherNotFoundException() {
-        super("Voucher was not found", HttpStatus.BAD_REQUEST);
+        super("Voucher was not found", HttpStatus.NOT_FOUND);
     }
 }

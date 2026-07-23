@@ -1,5 +1,6 @@
 package com.example.javashopspring.web;
 
+import com.example.javashopspring.Exceptions.ProductNotFoundException;
 import lombok.RequiredArgsConstructor;
 import com.example.javashopspring.dto.productDTO.CreateProductCommand;
 import com.example.javashopspring.dto.productDTO.ProductDto;
@@ -25,7 +26,7 @@ public class ProductController {
     public ResponseEntity<ProductDto> byId(@PathVariable String id) {
         return productManager.findById(id)
                 .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+                .orElseThrow(() -> new ProductNotFoundException(id));
     }
 
     @PostMapping
