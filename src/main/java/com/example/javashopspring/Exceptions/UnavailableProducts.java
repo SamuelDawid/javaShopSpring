@@ -5,6 +5,6 @@ import org.springframework.http.HttpStatus;
 public class UnavailableProducts extends JavaShopException {
     public UnavailableProducts(String product) {
 
-        super("Unavailable Product: " + product, HttpStatus.BAD_REQUEST);
+        super("Unavailable Product: " + product, HttpStatus.CONFLICT);
     }
 }
