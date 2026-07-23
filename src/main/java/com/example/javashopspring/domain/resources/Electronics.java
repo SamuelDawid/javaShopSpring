@@ -29,7 +29,7 @@ public class Electronics {
         Validate.notBlank(name, "Name can not be blank");
         Validate.notBlank(id, "Id can not be blank");
         Validate.isTrue(price.signum() > 0, "Price must be more than 0");
-        Validate.isTrue(quantity > 0, "Quantity must be more than 0");
+        Validate.isTrue(quantity >= 0, "Quantity must be more or equal to 0");
         this.id = id;
         this.name = name;
         this.price = price.setScale(2, RoundingMode.HALF_UP);

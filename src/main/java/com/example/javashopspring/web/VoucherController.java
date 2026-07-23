@@ -4,6 +4,7 @@ import com.example.javashopspring.dto.voucherDTO.CreateVoucherCommand;
 import com.example.javashopspring.dto.voucherDTO.VoucherDto;
 import com.example.javashopspring.models.Voucher;
 import com.example.javashopspring.service.VoucherService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +31,7 @@ public class VoucherController {
     }
 
     @PostMapping
-    public ResponseEntity<VoucherDto> create(@RequestBody CreateVoucherCommand request) {
+    public ResponseEntity<VoucherDto> create(@Valid @RequestBody CreateVoucherCommand request) {
         Voucher newVoucher = new Voucher(request.voucherName(), request.expirationDate(), request.percentage());
         voucherService.addVoucher(newVoucher);
         return ResponseEntity.status(HttpStatus.CREATED).body(new VoucherDto(newVoucher.getId(), newVoucher.getVoucherName(), newVoucher.getExpirationDate(), newVoucher.getPercentage(), newVoucher.isUsed()));

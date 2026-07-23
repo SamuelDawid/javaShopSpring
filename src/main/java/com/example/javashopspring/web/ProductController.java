@@ -1,6 +1,7 @@
 package com.example.javashopspring.web;
 
 import com.example.javashopspring.Exceptions.ProductNotFoundException;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import com.example.javashopspring.dto.productDTO.CreateProductCommand;
 import com.example.javashopspring.dto.productDTO.ProductDto;
@@ -30,14 +31,14 @@ public class ProductController {
     }
 
     @PostMapping
-    public ResponseEntity<ProductDto> create(@RequestBody CreateProductCommand request) {
+    public ResponseEntity<ProductDto> create(@Valid @RequestBody CreateProductCommand request) {
         ProductDto dto = productManager.addProduct(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(dto);
 
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ProductDto> update(@RequestBody CreateProductCommand request, @PathVariable String id) {
+    public ResponseEntity<ProductDto> update(@Valid @RequestBody CreateProductCommand request, @PathVariable String id) {
         ProductDto dto = productManager.update(id, request);
         return ResponseEntity.ok(dto);
     }
