@@ -1,7 +1,9 @@
 package com.example.javashopspring.Exceptions;
 
-public class NotAvailableForCompanyAccountsException extends RuntimeException {
+import org.springframework.http.HttpStatus;
+
+public class NotAvailableForCompanyAccountsException extends JavaShopException {
     public NotAvailableForCompanyAccountsException() {
-        super("This option is not available for Company type account");
+        super("This option is not available for Company type account", HttpStatus.BAD_REQUEST);
     }
 }

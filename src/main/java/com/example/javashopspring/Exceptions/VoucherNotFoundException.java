@@ -1,7 +1,9 @@
 package com.example.javashopspring.Exceptions;
 
-public class VoucherNotFoundException extends RuntimeException {
+import org.springframework.http.HttpStatus;
+
+public class VoucherNotFoundException extends JavaShopException {
     public VoucherNotFoundException() {
-        super("Voucher was not found");
+        super("Voucher was not found", HttpStatus.BAD_REQUEST);
     }
 }

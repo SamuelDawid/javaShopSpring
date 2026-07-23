@@ -1,7 +1,9 @@
 package com.example.javashopspring.Exceptions;
 
-public class NotEnoughPointsException extends RuntimeException {
+import org.springframework.http.HttpStatus;
+
+public class NotEnoughPointsException extends JavaShopException {
     public NotEnoughPointsException(String message) {
-        super(message);
+        super(message, HttpStatus.BAD_REQUEST);
     }
 }

@@ -1,7 +1,9 @@
 package com.example.javashopspring.Exceptions;
 
-public class NoSuchDiscountException extends RuntimeException {
+import org.springframework.http.HttpStatus;
+
+public class NoSuchDiscountException extends JavaShopException {
     public NoSuchDiscountException(String message) {
-        super(message);
+        super(message, HttpStatus.BAD_REQUEST);
     }
 }

@@ -1,7 +1,9 @@
 package com.example.javashopspring.Exceptions;
 
-public class OrderProcessingException extends RuntimeException {
+import org.springframework.http.HttpStatus;
+
+public class OrderProcessingException extends JavaShopException {
     public OrderProcessingException() {
-        super("Nothing could be shipped - all products out of stock");
+        super("Nothing could be shipped - all products out of stock", HttpStatus.BAD_REQUEST);
     }
 }

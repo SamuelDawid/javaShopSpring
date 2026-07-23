@@ -1,7 +1,9 @@
 package com.example.javashopspring.Exceptions;
 
-public class VoucherAlreadyExistsException extends RuntimeException {
+import org.springframework.http.HttpStatus;
+
+public class VoucherAlreadyExistsException extends JavaShopException {
     public VoucherAlreadyExistsException() {
-        super("Voucher Already Exists");
+        super("Voucher Already Exists", HttpStatus.BAD_REQUEST);
     }
 }

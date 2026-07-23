@@ -1,8 +1,10 @@
 package com.example.javashopspring.Exceptions;
 
-public class UnavailableProducts extends RuntimeException {
+import org.springframework.http.HttpStatus;
+
+public class UnavailableProducts extends JavaShopException {
     public UnavailableProducts(String product) {
 
-        super("Unavailable Product: " + product);
+        super("Unavailable Product: " + product, HttpStatus.BAD_REQUEST);
     }
 }

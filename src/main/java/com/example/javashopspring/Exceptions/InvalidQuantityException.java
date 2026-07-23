@@ -1,8 +1,10 @@
 package com.example.javashopspring.Exceptions;
 
-public class InvalidQuantityException extends RuntimeException {
+import org.springframework.http.HttpStatus;
+
+public class InvalidQuantityException extends JavaShopException {
     public InvalidQuantityException() {
 
-        super("Quantity must be a positive number!");
+        super("Quantity must be a positive number!", HttpStatus.BAD_REQUEST);
     }
 }

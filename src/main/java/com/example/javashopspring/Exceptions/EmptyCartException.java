@@ -1,7 +1,9 @@
 package com.example.javashopspring.Exceptions;
 
-public class EmptyCartException extends RuntimeException {
+import org.springframework.http.HttpStatus;
+
+public class EmptyCartException extends JavaShopException {
     public EmptyCartException() {
-        super("Cart is empty, can not checkout");
+        super("Cart is empty, can not checkout", HttpStatus.BAD_REQUEST);
     }
 }

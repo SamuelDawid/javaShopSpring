@@ -1,7 +1,9 @@
 package com.example.javashopspring.Exceptions;
 
-public class OnlyCompanyAccountDiscountException extends RuntimeException {
+import org.springframework.http.HttpStatus;
+
+public class OnlyCompanyAccountDiscountException extends JavaShopException {
     public OnlyCompanyAccountDiscountException() {
-        super("This discount is available only for Companies");
+        super("This discount is available only for Companies", HttpStatus.BAD_REQUEST);
     }
 }
