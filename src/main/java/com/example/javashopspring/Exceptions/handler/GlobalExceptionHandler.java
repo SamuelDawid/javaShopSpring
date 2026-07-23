@@ -7,12 +7,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
-import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.time.LocalDateTime;
+import java.util.stream.Collectors;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
@@ -31,12 +31,11 @@ public class GlobalExceptionHandler {
     }
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ErrorMessageDto> handleMethodArgument(MethodArgumentNotValidException e){
-        StringBuilder errorFields = new StringBuilder();
-        for (FieldError error : e.getBindingResult().getFieldErrors()){
-            errorFields.append(error.getField()).append(": ").append(error.getDefaultMessage());
-        }
+        String message = e.getBindingResult().getFieldErrors().stream()
+                .map(error -> error.getField() + ": " + error.getDefaultMessage())
+                .collect(Collectors.joining(", "));
         return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                .body(new ErrorMessageDto(errorFields.toString(),e.getStatusCode().value(),LocalDateTime.now()));
+                .body(new ErrorMessageDto(message,e.getStatusCode().value(),LocalDateTime.now()));
     }
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<ErrorMessageDto> handleMessageNotReadable(HttpMessageNotReadableException e){
